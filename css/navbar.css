@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/* Roboto: */
+
+@font-face{
+	font-family: Roboto;
+	src: url(font/Roboto/Roboto-Regular.ttf);
+}
+
+*{
+	margin: 0 auto;
+	font-family: Roboto;
+	box-sizing: border-box;
+}
+
+#barra_de_navegacao{
+	width: 100%; padding: 0;
+	height: 80px;
+	/* transition: .25s ease-in-out;
+	z-index: 20; */
+    background-color: #000;
+}
+
+#container{
+	height: 100px; width: 70%;
+	margin: 0 auto; max-width: 120rem;
+}
+
+#logotipo-img{
+	width: 195.79px;
+	height: 20px;
+	position: relative;
+	top: 10px; left: 10px;
+	/* transition: .25s ease-in-out;	 */
+	padding-top: 30px;
+	box-sizing: unset;
+}
+
+#lista-navbar, #lista-hamburguer-button{
+	float: right; 
+	font-family: Roboto !important;
+	font-size: .85rem;
+    padding: 0 .62rem; 
+    margin: 0;
+    display: block;
+	font-weight: bold;
+}
+
+#lista-navbar{
+	padding-top: 30px;}
+
+.destaque-menu{
+border-bottom: 3px solid #009688;
+padding-bottom: 2px;
+}
+
+.destaque-menu:hover{ border-bottom: 4px solid #037269;}
+
+#lista-hamburguer-button{display: none;}
+
+.indice-lista-navbar{
+	padding: 5px 5px;
+	background-color: #000;
+	transition: .3s;
+}
+.indice-lista-navbar:hover{	background-color: #009688;}
+
+
+ul .indice-lista-navbar, ul #indice-hambuerbuer-btn{
+	float: left;
+	list-style-type: none;
+	margin: 0 15px;
+}
+
+ul li .link-navbar{
+	text-decoration: none;
+	color: #fff;
+}
+
+#link-btn-hamburguer:hover{
+	cursor: pointer;
+}
+
+#hamburuger-btn-simbolo{
+	height: 50px;
+    position: relative;
+    top: 20px;
+}
+
+.painel-lateral{
+	display: none;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 21;
+	top: 0; right: 0;
+	background-color: #fff;
+	overflow-x: hidden;
+	transition: .5s; 
+	padding-top: 60px;
+	box-shadow: none;
+}
+
+.painel-lateral a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.56rem;
+  color: #111;
+  display: block;
+  transition: .3s ease-in-out;
+}
+
+.painel-lateral a:hover{color: #4e61c7;}
+
+.painel-lateral .botao-fechar{
+	position: absolute;
+	top: 0px; right: 25px;
+	font-size: 2.25rem;
+	margin-left: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 1250px){
+	.painel-lateral{
+		display: block;
+	}
+}
+
+@media (max-width: 1250px){
+	.painel-lateral{
+		padding-top: 15px;
+	}.painel-lateral a{
+		font-size: 1.125rem;
+	}
+}
+
+/*---------- Media Query - Tela Menor:  ----------*/
+
+@media (max-width: 1250px){
+	#container{
+		width: 90%;
+	}#logotipo-img{
+		left: 0px !important;
+	}#lista-navbar{
+		display: none;
+	}#lista-hamburguer-button{
+		display: block;
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 1250px){
+	#hamburuger-btn-simbolo {
+		height: 40px;
+		position: relative;
+		top: 25px;
+	}
+}
+
+@media (max-width: 310px) {
+    ul #indice-hambuerbuer-btn { margin: 0 auto;}
+}

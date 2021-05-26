@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/style1.css">
+        <link rel="stylesheet" href="./css/foooter.css">
+        <title>atual</title>
+    </head>
+    <body>
+
+        <div id="painel-lateral" class="painel-lateral">
+            <a href="javascript:void(0)" class="botao-fechar" onclick="fechar_painel()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="encontre-seu-programador.html">Procure seu programador</a>
+            <a href="modo-de-uso.html">Modo de uso</a>
+            <a href="quem-somos.html">Quem somos</a>
+        </div>
+
+        <header id="barra_de_navegacao">
+            <div id="container">
+                <a href="index.html">
+                    <img id="logotipo-img" alt="img-logotipo" src="./img/logotipo.png">
+                </a>
+                <ul id="lista-navbar">
+                    <li class="indice-lista-navbar"><a class="link-navbar" href="index.html">Home</a></li>
+                    <li class="indice-lista-navbar destaque-menu"><a class="link-navbar" href="encontre-seu-programador.html">Procure seu programador</a></li>
+                    <li class="indice-lista-navbar"><a class="link-navbar" href="modo-de-uso.html">Modo de uso</a></li>
+                    <li class="indice-lista-navbar"><a id="link-contato" class="link-navbar" href="quem-somos.html">Quem somos</a></li>
+                </ul>
+                <ul id="lista-hamburguer-button">
+                    <li id="indice-hambuerbuer-btn">
+                        <a id="link-btn-hamburguer" onclick="abrirPainel()">
+                            <img id="hamburuger-btn-simbolo" alt="hamburguer-button" src="./img/menu-button-branco.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        
+        <main id="container-principal">
+
+            <div id="container-rotanavegacao">
+                <ul  class="rota-de-navegacao">
+                    <li class="lista-rota-de-navegacao"><a href="index.html">Home</a> <img class="seta-rota-navegacao" src="img/seta-navegacao.png" alt=""></li>
+                    <li class="lista-rota-de-navegacao-destaque"><a href="encontre-seu-programador.html">Encontre seu programador</a></li>
+                </ul>
+            </div>
+            <div id="caixa-para-dicas">
+                <p>
+                  <strong>Balão de dicas:</strong>
+                  quando você clicar no botão para achar a pessoa ao qual você está procurando,
+                  serão mostrados todos os repositórios da mesma. Dependendo de como essa pessoa o fez,
+                  irá aparecer <span>a linguagem mais usada para a construção do mesmo</span>, <span>descrição</span> 
+                  (se existir uma) e em todos os casos, <span>título do repositório</span>, 
+                  ao qual você pode usar como um link para ver o trabalho da pessoa mais de perto. 
+                  Caso ainda tenha alguma dúvida clique <a id="link-de-informacoes" href="modo-de-uso.html">aqui</a> para 
+                  ir até a página de informações.
+                </p>
+            </div>
+
+
+            <div id="caixa-de-input-para-busca">
+                <h3>Encontre seu programador</h3>
+                <p>
+                    Encontre o programador desejado pelo nome do perfil do github dele.
+                    Dessa forma a página mostrará os projetos do mesmo e a linguagem deles.
+                </p>
+                <p><strong>Caso o usuário não exista, não aparecerá resultado.</strong></p>
+                <div id="caixa-btn-input">
+                    <input id="input-busca" type="text" placeholder="Nome da conta do Github">
+                    <button id="btn-buscar-info">Buscar</button>
+                </div>
+            </div>
+            <section id="div-repositorios">
+      
+      
+            </section>
+        
+        </main>
+
+        <footer id="footer">
+            <div class="div-container-footer" id="footer-container">
+                <div class="footer-img" id="container-logotipo">
+                    <a href="index.html">
+                        <p id="logotipo-footer"">FindYourProgrammer</p>
+                    </a>
+                </div>
+                <div id="links-do-footer" class="">
+                    <!-- <a href="index.html">Home</a> -->
+                    <a href="encontre-seu-programador.html">Procure seu programador</a>
+                    <!-- <a href="modo-de-uso.html">Modo de uso</a>
+                    <a href="quem-somos.html">Quem somos</a> -->
+                </div>
+            </div>
+            <div class="div-container-footer" id="copyright">
+                <p>
+                    Copyright &copy; 2021 | Essa template foi projeta e criada 
+                    por Ivan Guimarães e Nathalia Souza.
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

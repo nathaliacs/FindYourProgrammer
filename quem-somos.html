@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>atual</title>
+        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="shortcut icon" href="./img/favicon-fyp.png">
+        <link rel="stylesheet" href="./css/foooter.css">
+        <link rel="stylesheet" href="css/style1.css">
+    </head>
+    <body>
+        <div id="painel-lateral" class="painel-lateral">
+            <a href="javascript:void(0)" class="botao-fechar" onclick="fechar_painel()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="encontre-seu-programador.html">Procure seu programador</a>
+            <a href="modo-de-uso.html">Modo de uso</a>
+            <a href="quem-somos.html">Quem somos</a>
+        </div>
+    
+    
+        <header id="barra_de_navegacao">
+            <div id="container">
+    
+                <a href="index.html">
+                    <img id="logotipo-img" alt="img-logotipo" src="./img/logotipo.png">
+                </a>
+                <ul id="lista-navbar">
+                    <li class="indice-lista-navbar destaque-menu"><a class="link-navbar" href="index.html">Home</a></li>
+                    <li class="indice-lista-navbar"><a class="link-navbar" href="encontre-seu-programador.html">Procure seu programador</a></li>
+                    <li class="indice-lista-navbar"><a class="link-navbar" href="modo-de-uso.html">Modo de uso</a></li>
+                    <li class="indice-lista-navbar"><a id="link-contato" class="link-navbar" href="quem-somos.html">Quem somos</a></li>
+                </ul>
+                <ul id="lista-hamburguer-button">
+                    <li id="indice-hambuerbuer-btn">
+                        <a id="link-btn-hamburguer" onclick="abrirPainel()">
+                            <img id="hamburuger-btn-simbolo" alt="hamburguer-button" src="./img/menu-button-branco.svg">
+                        </a>
+                    </li>
+                </ul>
+    
+            </div>
+        </header>
+        
+        <main>
+            <div id="container-rotanavegacao">
+                <ul  class="rota-de-navegacao">
+                    <li class="lista-rota-de-navegacao"><a href="index.html">Home</a> <img class="seta-rota-navegacao" src="img/seta-navegacao.png" alt=""></li>
+                    <li class="lista-rota-de-navegacao-destaque"><a href="quem-somos.html">Quem somos</a></li>
+                </ul>
+            </div>
+
+            <div class="padrao-main-paginas">
+                <div class="container-informacoes-pgs">
+                    <h2 class="h2-titulos">Quem somos</h2>
+                    <p id="parag-quem-somos-nos" class="parag-com-primeira-letra-grande">
+                        A equipe desse projeto é composta pelos dois programadores, Ivan Guimarães e Nathalia Souza, os quais 
+                        fizeram todo o mecanismo e a composição desse projeto.
+                        Os mesmos possuem os seguintes perfis no Github: <a href="https://github.com/2504Guimaraes">2504Guimaraes</a> e <a href="https://github.com/nathaliacs">nathaliacs</a>
+                    </p>
+                  
+                </div>
+            </div>
+
+        </main>
+        <footer id="footer">
+            <div class="div-container-footer" id="footer-container">
+                <div class="footer-img" id="container-logotipo">
+                    <a href="index.html">
+                        <p id="logotipo-footer">FindYourProgrammer</p>
+                    </a>
+                </div>
+                <div id="links-do-footer" class="">
+                    <!-- <a href="index.html">Home</a> -->
+                    <a href="encontre-seu-programador.html">Procure seu programador</a>
+                    <!-- <a href="modo-de-uso.html">Modo de uso</a>
+                    <a href="quem-somos.html">Quem somos</a> -->
+                </div>
+            </div>
+            <div class="div-container-footer" id="copyright">
+                <p>
+                    Copyright &copy; 2021 | Essa template foi projeta e criada 
+                    por Ivan Guimarães e Nathalia Souza.
+                </p>
+            </div>
+        </footer>
+        <script src="./js/script.js"></script>
+
+    </body>
+</html>
