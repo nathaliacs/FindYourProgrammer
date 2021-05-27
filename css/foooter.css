@@ -17,7 +17,7 @@
 .div-container-footer { flex: 1;}
 
 #copyright p{flex: 1;
-    width: 50%;
+    width: 60%;
     text-align: center;
 }
 
@@ -88,5 +88,21 @@ width: 100%;
         padding: 5px 0;
     }
     #container-logotipo{float: none;} 
- 
+}
+@media(max-width: 600px){ 
+	#copyright p{
+		width: 70%;
+    }
+}
+
+@media (max-width: 426px) {
+    #copyright p{
+		width: 90%;
+    }
+}
+
+@media (max-width: 426px){
+	#copyright p {
+		width: 95%;
+	}
 }
