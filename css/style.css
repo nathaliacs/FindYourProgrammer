@@ -133,6 +133,32 @@ main {
 
 #lista-como-funciona { padding-top: 5px;}
 
+.mapa-do-site a { padding-bottom: 15px;}
+
+.mapa-do-site a {
+    text-decoration: none;
+    color: #000;
+    font-size: .85rem;
+}
+
+#lista-mapa-do-site { 
+	padding-top: 25px;
+}
+
+#lista-mapa-do-site a {
+	text-decoration: none; 
+	color: #000;
+}
+
+#lista-mapa-do-site a:hover {
+	color: #037269;
+}
+
+#lista-mapa-do-site li {
+	list-style-type: none; 
+	padding-top: 5px;
+}
+
 @media (max-width: 1024px) {
     #imagem-programador-banner-index { display: none;}
 
